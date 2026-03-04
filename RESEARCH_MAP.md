@@ -18,3 +18,7 @@ Exposes audit visibility, public-safe artifacts, and traceability surfaces.
 - Upstream: See C:\Users\sirok\mocka-ecosystem\_canon\docs\RESEARCH_ARCHITECTURE_MAP_v1.md
 - Downstream: See C:\Users\sirok\mocka-ecosystem\_canon\docs\RESEARCH_ARCHITECTURE_MAP_v1.md
 
+
+## Experiments
+See experiments/ directory.
+
