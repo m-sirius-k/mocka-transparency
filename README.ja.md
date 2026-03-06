@@ -34,7 +34,7 @@ English version: README.md
 
 
 
-git clone https://github.com/nsjpkimura-del/mocka-transparency.git
+git clone https://github.com/m-sirius-k/mocka-transparency.git
 
 cd mocka-transparency
 
@@ -99,4 +99,5 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\\scripts\\verify\_one.ps1
 ・公開鍵のみで検証できる  
 
 ・Git により確実に復旧できる
+
 
