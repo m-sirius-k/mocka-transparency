@@ -22,8 +22,12 @@ MoCKA Transparency exists to change that.
 
 This repository defines how AI outputs can become provable research artifacts.
 
+---
 
  ## MoCKA Verification Architecture
+ 
+ The following diagram shows how research artifacts become verifiable evidence
+within the MoCKA Insight System.
 
  <svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
 
@@ -56,6 +60,9 @@ This repository defines how AI outputs can become provable research artifacts.
  </text>
 
  </svg>
+ 
+ The architecture above illustrates how operational results produced by MoCKA
+are transformed into verifiable research artifacts through the transparency layer.
 
 ---
 
