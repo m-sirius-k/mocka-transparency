@@ -1,37 +1,37 @@
-﻿# MoCKA Transparency
+﻿ # MoCKA Transparency
 
-Verification and Proof Layer of the MoCKA Insight System
+ Verification and Proof Layer of the MoCKA Insight System
 
----
+ ---
 
-## Why This Repository Exists
+ ## Why This Repository Exists
 
-Artificial intelligence can generate answers.
+ Artificial intelligence can generate answers.
 
-But generation alone does not create knowledge.
+ But generation alone does not create knowledge.
 
-Knowledge requires three properties.
+ Knowledge requires three properties.
 
-Traceability  
-Verifiability  
-Provability  
+ Traceability  
+ Verifiability  
+ Provability
 
-Most AI systems produce results that cannot be independently verified.
+ Most AI systems produce results that cannot be independently verified.
 
-MoCKA Transparency exists to change that.
+ MoCKA Transparency exists to change that.
 
-This repository defines how AI outputs can become provable research artifacts.
+ This repository defines how AI outputs can become provable research artifacts.
 
----
+ ---
 
  ## MoCKA Verification Architecture
- 
+
  The following diagram shows how research artifacts become verifiable evidence
-within the MoCKA Insight System.
+ within the MoCKA Insight System.
 
  <svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
 
- <!-- Core -->
+ <!-- MoCKA Core -->
  <rect x="60" y="150" width="180" height="80" rx="10" fill="#2d3748"/>
  <text x="150" y="195" text-anchor="middle" fill="white" font-size="16">MoCKA Core</text>
 
@@ -54,183 +54,188 @@ within the MoCKA Insight System.
  <text x="290" y="135" font-size="13">research artifacts</text>
  <text x="610" y="140" font-size="13">verification evidence</text>
 
- <!-- bottom text -->
+ <!-- description -->
  <text x="450" y="360" text-anchor="middle" font-size="14">
  MoCKA converts AI results into verifiable research artifacts
  </text>
 
  </svg>
- 
+
  The architecture above illustrates how operational results produced by MoCKA
-are transformed into verifiable research artifacts through the transparency layer.
+ are transformed into verifiable research artifacts through the transparency layer.
 
----
+ ---
 
-## What Makes This Different
+ ## What Makes This Different
 
-In most AI systems
+ In most AI systems
 
-results are trusted  
-processes are hidden  
-verification is difficult  
+ results are trusted  
+ processes are hidden  
+ verification is difficult
 
-In the MoCKA Insight System
+ In the MoCKA Insight System
 
-results are observable  
-processes are traceable  
-artifacts are verifiable  
+ results are observable  
+ processes are traceable  
+ artifacts are verifiable
 
-An AI result is therefore not just a statement.
+ An AI result is therefore not just a statement.
 
-It becomes evidence.
+ It becomes evidence.
 
-Transparency transforms AI systems from black boxes into verifiable research infrastructure.
+ Transparency transforms AI systems from black boxes
+ into verifiable research infrastructure.
 
----
+ ---
 
-## Role
+ ## Role
 
-mocka-transparency defines the transparency and integrity model of the MoCKA Insight System.
+ mocka-transparency defines the transparency and integrity model
+ of the MoCKA Insight System.
 
-It specifies how operational artifacts and decision traces can be inspected and verified by external observers.
+ It specifies how operational artifacts and decision traces
+ can be inspected and verified by external observers.
 
-This repository functions as the public verification layer.
+ This repository functions as the public verification layer.
 
----
+ ---
 
-## Core Principles
+ ## Core Principles
 
-Returnability  
-Every result must allow observers to trace how it was produced.
+ Returnability  
+ Every result must allow observers to trace how it was produced.
 
-Verifiability  
-Artifacts must be inspectable and testable by independent observers.
+ Verifiability  
+ Artifacts must be inspectable and testable by independent observers.
 
-Provability  
-Integrity must be demonstrable through cryptographic evidence.
+ Provability  
+ Integrity must be demonstrable through cryptographic evidence.
 
-Continuity  
-Knowledge circulation must not stop even if parts of the system fail.
+ Continuity  
+ Knowledge circulation must not stop even if parts of the system fail.
 
----
+ ---
 
-## Evidence Model
+ ## Evidence Model
 
-Transparency does not mean publishing everything.
+ Transparency does not mean publishing everything.
 
-Transparency means publishing structured evidence.
+ Transparency means publishing structured evidence.
 
-Operational artifacts become verifiable evidence through
+ Operational artifacts become verifiable evidence through
 
-cryptographic hashes  
-digital signatures  
-verification reports  
+ cryptographic hashes  
+ digital signatures  
+ verification reports
 
-Trust is not required.
+ Trust is not required.
 
-Evidence is sufficient.
+ Evidence is sufficient.
 
----
+ ---
 
-## Typical Verification Workflow
+ ## Typical Verification Workflow
 
-1 Generate operational artifacts
+ 1 Generate operational artifacts
 
-Examples
+ Examples
 
-experiment results  
-verification outputs  
-research map updates  
-integrity scan reports  
+ experiment results  
+ verification outputs  
+ research map updates  
+ integrity scan reports
 
----
+ ---
 
-2 Generate integrity evidence
+ 2 Generate integrity evidence
 
-SHA256 hash generation  
-GPG signatures  
+ SHA256 hash generation  
+ GPG signatures
 
----
+ ---
 
-3 Publish public safe artifacts
+ 3 Publish public safe artifacts
 
-Artifacts without sensitive data are published.
+ Artifacts without sensitive data are published.
 
----
+ ---
 
-4 Independent external verification
+ 4 Independent external verification
 
-External observers verify artifacts by
+ External observers verify artifacts by
 
-recomputing hashes  
-verifying signatures  
-comparing verification reports  
+ recomputing hashes  
+ verifying signatures  
+ comparing verification reports
 
----
+ ---
 
-## Result
+ ## Result
 
-MoCKA produces research outputs that are not only visible but provable.
+ MoCKA produces research outputs that are not only visible but provable.
 
-Artifacts can be
+ Artifacts can be
 
-reproduced  
-verified  
-audited  
+ reproduced  
+ verified  
+ audited
 
----
+ ---
 
-## Navigation
+ ## Navigation
 
-MoCKA  
-https://github.com/m-sirius-k/MoCKA
+ MoCKA  
+ https://github.com/m-sirius-k/MoCKA
 
-MoCKA Knowledge Gate  
-https://github.com/m-sirius-k/MoCKA-KNOWLEDGE-GATE
+ MoCKA Knowledge Gate  
+ https://github.com/m-sirius-k/MoCKA-KNOWLEDGE-GATE
 
-MoCKA Civilization  
-https://github.com/m-sirius-k/mocka-civilization
+ MoCKA Civilization  
+ https://github.com/m-sirius-k/mocka-civilization
 
-MoCKA Transparency  
-https://github.com/m-sirius-k/mocka-transparency
+ MoCKA Transparency  
+ https://github.com/m-sirius-k/mocka-transparency
 
-MoCKA External Brain  
-https://github.com/m-sirius-k/mocka-external-brain
+ MoCKA External Brain  
+ https://github.com/m-sirius-k/mocka-external-brain
 
-MoCKA Core Private  
-https://github.com/m-sirius-k/mocka-core-private
+ MoCKA Core Private  
+ https://github.com/m-sirius-k/mocka-core-private
 
----
+ ---
 
-## 日本語説明
+ ## 日本語説明
 
-mocka-transparency は  
-MoCKA Insight System の
+ mocka-transparency は
+ MoCKA Insight System における
 
-透明性  
-整合性  
-検証可能性  
+ 透明性  
+ 整合性  
+ 検証可能性
 
-を成立させる監査レイヤーである。
+ を成立させる監査レイヤーである。
 
-MoCKA は単なる AI 出力ではない。
+ MoCKA は単なる AI 出力ではない。
 
-生成された知識を
+ 生成された知識を
 
-追跡できる  
-検証できる  
-証明できる  
+ 追跡できる  
+ 検証できる  
+ 証明できる
 
-状態にするための制度である。
+ 状態にするための制度である。
 
-透明性とは  
-何でも公開することではない。
+ 透明性とは
+ 何でも公開することではない。
 
-透明性とは  
-検証可能な証拠による構造化された公開である。
+ 透明性とは
+ 検証可能な証拠による
+ 構造化された公開である。
 
-整合性とは  
-信頼ではない。
+ 整合性とは
+ 信頼ではない。
 
-整合性とは  
-第三者が独立して検証できる一貫性である。
+ 整合性とは
+ 第三者が独立して検証できる
+ 一貫性である。
