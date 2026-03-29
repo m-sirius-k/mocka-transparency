@@ -1,384 +1,143 @@
-﻿# MoCKA Ecosystem
+﻿# MoCKA Transparency — Tamper Detection Layer
 
-This repository is part of the **MoCKA Civilization Research Ecosystem**.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/m-sirius-k/MoCKA/main/docs/images/mocka_overview.svg" width="800">
+</p>
 
-MoCKA studies AI civilization systems including governance, consensus and institutional memory.
-
-## Ecosystem Structure
-
-Research Core  
-MoCKA
-
-Civilization Theory  
-mocka-civilization
-
-Knowledge System  
-mocka-knowledge-gate
-
-Transparency Layer  
-mocka-transparency
-
-Network Layer  
-mocka-outfield
-
-Civilization Core (private)  
-mocka-core-private
-
-## 概要
-
-このリポジトリは **MoCKA AI文明研究エコシステム** の一部です。
-
-MoCKAはAI文明の制度、合意形成、知識継承を研究するプロジェクトです。
-
-## 文明構造
-
-研究コア  
-MoCKA
-
-文明理論  
-mocka-civilization
-
-知識システム  
-mocka-knowledge-gate
-
-透明性  
-mocka-transparency
-
-ネットワーク  
-mocka-outfield
-
-文明コア（非公開）  
-mocka-core-private
-
-#  MoCKA Transparency
-Verification and Proof Layer of the MoCKA Insight System
-
-MoCKA Transparency is the component of the MoCKA architecture responsible for transforming AI-generated outputs into **verifiable research evidence**.
-
-Most artificial intelligence systems generate answers.  
-However, generated answers alone do not constitute knowledge.
-
-Transparency ensures that AI results become **traceable, reproducible, and independently verifiable research artifacts**.
+> **This is not a security scanner. Not a firewall. Not an access control system.**
+> It is the layer that proves nothing has been altered —
+> cryptographically, independently, and publicly.
+>
+> Not "trust us."
+> "Verify yourself."
 
 ---
 
-##  System Position in the MoCKA Architecture
+## Position in mocka_Movement
 
-![MoCKA System Position](docs/images/mocka_system_position.svg)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/m-sirius-k/MoCKA/main/docs/images/mocka_architecture_v2.svg" width="720">
+</p>
+```
+MoCKA (core · heart)
+      ↓
+mocka-knowledge-gate       ② Record
+      ↓
+[ mocka-transparency ]     ← ③ Incident · ④ Recurrence — YOU ARE HERE
+      ↓
+mocka-external-brain       ⑥ Decision
+      ↓
+mocka-civilization         ⑧ Institutionalize
+```
 
-The MoCKA ecosystem consists of three interacting research layers.
-
-**MoCKA Core**  
-Responsible for producing AI reasoning processes and experimental outputs.
-
-**Knowledge Gate**  
-Maintains institutional memory and preserves research context.
-
-**Transparency**  
-Transforms research outputs into artifacts that can be independently verified.
-
-Within this structure, Transparency functions as the **evidence production layer** of the MoCKA research system.
-
----
-
-##  Conceptual Foundation
-
-Artificial intelligence can produce answers.
-
-But answers alone do not become knowledge.
-
-Knowledge requires three essential properties.
-
-Traceability  
-Verifiability  
-Provability  
-
-Without these properties, outputs remain unconfirmed claims.
-
-MoCKA Transparency introduces a structure in which AI results are transformed into **verifiable research artifacts**.
+**Loop step: ③ Incident · ④ Recurrence**
+Upstream: mocka-knowledge-gate → sends sealed records
+Downstream: mocka-external-brain → receives verified findings
 
 ---
 
-##  Dual Movement Architecture
+## What this repository does
 
-MoCKA maintains research continuity through a dual-movement structure.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/m-sirius-k/MoCKA/main/docs/images/mocka_loop_v2.svg" width="720">
+</p>
 
-![Dual Movement](docs/images/mocka_dual_movement.svg)
+mocka-transparency provides cryptographic proof that every record is authentic.
 
-###  Primary Movement
+- **Ed25519 digital signatures** — every governance event is signed
+- **SHA256 hash chain** — append-only, tamper-evident history
+- **Public verification** — anyone can verify, no trust required
+- **Tamper detection** — even one byte changed is detected
 
-The primary operational flow of the research system.
-
-AI outputs are generated and passed through structured verification procedures.
-
-This movement represents the normal research pipeline.
-
-###  Shadow Movement
-
-An auxiliary research path designed to preserve knowledge circulation.
-
-If the primary research flow is interrupted, the Shadow system continues operation.
-
-Shadow maintains a minimum research capability of **approximately seventy-five percent**.
+If anything was altered — the system detects it.
+If the chain is intact — the system proves it.
 
 ---
 
-##  Verification Architecture
+## shadow_Movement and transparency
+```
+Primary path fails
+      ↓
+shadow_Movement activates
+      ↓
+mocka-transparency preserves the evidence
+      ↓
+Failure is recorded · analyzed · institutionalized
+      ↓
+The civilization loop continues
+```
 
-Transparency converts AI outputs into verifiable evidence through a staged process.
-
-![Verification Architecture](docs/images/mocka_verification_architecture.svg)
-
-The transformation generally follows four stages.
-
-AI Output  
-Research Artifact  
-Cryptographic Evidence  
-Public Verification  
-
-Through this process, research outputs become reproducible and externally auditable artifacts.
-
----
-
-##  Evidence Construction
-
-Artifacts generated by the Transparency layer are designed for independent validation.
-
-Typical artifact elements include:
-
-experiment identifier  
-artifact hash  
-signature record  
-verification procedure  
-reproduction instructions  
-
-These elements allow third parties to confirm research claims without relying solely on trust.
-
-Verification becomes a **deterministic process rather than subjective interpretation**.
+shadow_Movement is not a backup.
+mocka-transparency ensures the evidence survives
+even when the primary path fails.
 
 ---
 
-##  Operational Workflow
+## Quick Start
+```powershell
+# Verify the hash chain
+python verify_chain.py
+# → CHAIN OK
 
-The Transparency layer follows a structured verification workflow.
+# Run all governance checks
+python verify_all.py
+# → ALL CHECKS PASSED
 
-1 AI experiment produces an output  
-
-2 The output is recorded as a research artifact  
-
-3 Cryptographic identifiers such as hashes and signatures are generated  
-
-4 The artifact becomes available for public verification  
-
-Through this workflow, AI outputs are elevated to the level of **scientific evidence**.
-
----
-
-##  Position in the MoCKA Ecosystem
-
-MoCKA is not merely a system that produces AI results.
-
-It is a research infrastructure designed to support **verifiable knowledge creation**.
-
-MoCKA Core generates experimental outputs.  
-Knowledge Gate preserves research context and institutional memory.  
-Transparency converts research outputs into verifiable evidence.
-
-Together these layers establish a research environment where knowledge is not only generated but **demonstrably validated**.
+# Demonstrate tamper detection
+.\tamper_demo.ps1
+```
 
 ---
 
-#  日本語版
+## Status
 
-MoCKA Transparency  
-MoCKA Insight System における検証レイヤー
-
-MoCKA Transparency は AI が生成した結果を  
-**検証可能な研究証拠へ変換する仕組み**である。
-
-多くの AI システムは結果を生成するが、  
-生成された結果だけでは知識とは言えない。
-
-Transparency は AI の研究結果を  
-**追跡可能・再現可能・第三者検証可能**な研究成果物へ変換する。
+**Active Development**
+Part of the MoCKA deterministic governance architecture.
+Loop position: ③ Incident · ④ Recurrence
 
 ---
 
-##  MoCKA システム内の位置
+## 日本語
 
-![MoCKA System Position](docs/images/mocka_system_position.svg)
+### MoCKA Transparencyとは何か
 
-MoCKA エコシステムは三つの研究レイヤーで構成される。
+セキュリティスキャナーではありません。ファイアウォールでもありません。
+何も改ざんされていないことを暗号的に・独立して・公開可能な形で証明する層です。
 
-**MoCKA Core**  
-AI の推論および研究実験結果を生成する層。
+「信頼してください」ではなく「自分で検証してください」。
 
-**Knowledge Gate**  
-研究文脈と制度的記憶を保存する層。
+### mocka_Movementにおける位置づけ
+```
+MoCKA（コア・心臓部）
+      ↓
+mocka-knowledge-gate       ② Record
+      ↓
+[ mocka-transparency ]     ← ③ Incident · ④ Recurrence — ここです
+      ↓
+mocka-external-brain       ⑥ Decision
+      ↓
+mocka-civilization         ⑧ 制度化
+```
 
-**Transparency**  
-研究結果を第三者が検証できる証拠へ変換する層。
+**ループステップ：③ Incident · ④ Recurrence**
+上流：mocka-knowledge-gate → 封印済み記録を送信
+下流：mocka-external-brain → 検証済み知見を受信
 
-この構造において Transparency は  
-MoCKA システムの **証拠生成レイヤー**として機能する。
+### このリポジトリの役割
 
----
+すべての記録が本物であることを暗号的に証明します。
 
-##  基本理念
+- **Ed25519デジタル署名** — 全ガバナンスイベントが署名済み
+- **SHA256ハッシュチェーン** — 追記専用・改ざん検知可能な履歴
+- **公開検証** — 誰でも検証可能・信頼不要
+- **改ざん検知** — 1バイトでも変更があれば検出
 
-AI は答えを生成することができる。
+### shadow_Movementとの関係
 
-しかし生成された答えだけでは知識にはならない。
-
-信頼できる知識には次の三つの条件が必要である。
-
-追跡可能性  
-検証可能性  
-証明可能性  
-
-これらが欠けている場合、結果は単なる主張にすぎない。
-
-MoCKA Transparency は AI の出力を  
-**検証可能な研究成果物**へ変換するための構造を提供する。
-
----
-
-##  デュアルムーブメント構造
-
-MoCKA は二つの循環構造によって研究の継続性を維持する。
-
-![Dual Movement](docs/images/mocka_dual_movement.svg)
-
-###  Primary Movement
-
-研究システムの通常運用経路。
-
-AI 出力が生成され、検証プロセスを通過する。
-
-これは通常の研究サイクルを表す。
-
-###  Shadow Movement
-
-研究継続性を確保する補助経路。
-
-主経路が停止した場合でも Shadow が知識循環を維持する。
-
-Shadow は **約 75% の研究稼働能力**を保持する。
+shadow_Movementはバックアップではありません。
+mocka-transparencyは主系が停止しても証拠を保全し、
+文明ループが継続することを保証します。
 
 ---
 
-##  検証アーキテクチャ
-
-Transparency は AI の結果を段階的に検証可能な証拠へ変換する。
-
-![Verification Architecture](docs/images/mocka_verification_architecture.svg)
-
-変換プロセスは次の段階で構成される。
-
-AI 出力  
-研究成果物  
-暗号証拠  
-公開検証  
-
-この構造により研究結果は再現可能で外部監査が可能になる。
-
----
-
-##  証拠生成
-
-Transparency が生成する成果物は第三者による検証を前提として設計されている。
-
-典型的な要素は次の通りである。
-
-実験識別子  
-成果物ハッシュ  
-署名情報  
-検証手順  
-再現方法  
-
-これにより研究結果は信頼ではなく  
-**検証によって確認できるもの**となる。
-
----
-
-##  ワークフロー
-
-Transparency の検証フローは決定論的な手順に従う。
-
-1 AI 実験が結果を生成する  
-
-2 結果が研究成果物として記録される  
-
-3 ハッシュと署名が生成される  
-
-4 成果物が公開検証可能になる  
-
-このプロセスにより AI 出力は **科学的証拠**として扱える。
-
----
-
-##  MoCKA エコシステムにおける役割
-
-MoCKA は AI の結果を生成するだけのシステムではない。
-
-それは **検証可能な知識を生み出す研究基盤**である。
-
-MoCKA Core は研究結果を生成する。  
-Knowledge Gate は研究文脈と制度的記憶を保存する。  
-Transparency は研究結果を検証可能な証拠へ変換する。
-
-この三層構造により、  
-知識は生成されるだけでなく **証明される**。
-# MoCKA Ecosystem
-
-This repository is part of the **MoCKA Civilization Research Ecosystem**.
-
-MoCKA studies AI civilization systems including governance, consensus and institutional memory.
-
-## Ecosystem Structure
-
-Research Core  
-MoCKA
-
-Civilization Theory  
-mocka-civilization
-
-Knowledge System  
-mocka-knowledge-gate
-
-Transparency Layer  
-mocka-transparency
-
-Network Layer  
-mocka-outfield
-
-Civilization Core (private)  
-mocka-core-private
-
-## 概要
-
-このリポジトリは **MoCKA AI文明研究エコシステム** の一部です。
-
-MoCKAはAI文明の制度、合意形成、知識継承を研究するプロジェクトです。
-
-## 文明構造
-
-研究コア  
-MoCKA
-
-文明理論  
-mocka-civilization
-
-知識システム  
-mocka-knowledge-gate
-
-透明性  
-mocka-transparency
-
-ネットワーク  
-mocka-outfield
-
-文明コア（非公開）  
-mocka-core-private
-
-
+Part of the [MoCKA Deterministic Governance Architecture](https://github.com/m-sirius-k/MoCKA).
